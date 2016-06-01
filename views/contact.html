@@ -1,0 +1,60 @@
+<a class="waves-effect bt-mess white btn modal-trigger" href="#modal1">留言</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+	<div class="bicon waves-effect grey darken-1">
+		<i class="material-icons" id="upimg">navigation</i>
+	</div>
+	<div class="textarea">
+		<div class="input-field col s12">
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="textarea1">message</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="name" class="materialize-textarea"></textarea>
+          <label for="name">name</label>
+        </div>
+	</div>
+	<div class="modal-foote">
+		<a class="waves-effect modal-close buttom waves-light btn" id="startup">确认</a>
+	</div>
+</div>
+
+
+{{#datajson}}
+<div class="col s12 m12 l3 message">
+	{{#.}}
+	<div class="simg">
+		<img class="materialboxed" src="img/{{imgname}}">
+	</div>
+	<div class="atext">
+	<!--<div class="like">
+		<i class="iconfont">&#xe601;</i>
+	</div>-->
+		<div class="atextp">
+			
+			<pre>{{message}}</pre>
+		</div>
+		<p class="name">--LY</p>
+		<div class="atexti">
+			<div class="at">
+				<i class="iconfont">&#xe609</i>
+				<p>天气</p>
+			</div> 
+			<div class="at at1">
+				<i class="iconfont">&#xe60b</i>
+				<p>{{vMon}}/{{vDay}}&nbsp&nbsp{{h}}:{{m}}</p>
+			</div>
+			<div class="at at1 ">
+				<i class="iconfont">&#xe60a</i>
+				<p>{{city}}</p>
+			</div>
+		</div>
+	</div>
+	{{/.}}
+</div>
+{{/datajson}}
+
+	
+
+

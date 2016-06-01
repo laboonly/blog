@@ -1,0 +1,12 @@
+{
+  "name": "lyblog",
+  "description": "my blog",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "4.x",
+    "marked": "^0.3.5",
+    "multer": "^1.1.0"
+  }
+}
